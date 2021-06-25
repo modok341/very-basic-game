@@ -53,4 +53,7 @@ while run:
     crosshair_group.draw(screen)
     crosshair_group.update()
     clock.tick(60)
-  
+        if new_target in target_group:
+        run=True
+    else:
+        run=False
