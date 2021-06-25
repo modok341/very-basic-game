@@ -38,7 +38,7 @@ for target in range(20):
 
     new_target=Target("target_red2.png",random.randrange(0,screen_width),random.randrange(0,screen_height))
     target_group.add(new_target)
-a=pygame.sprite.Group.sprites(target_group)
+
 run=True
 while run:
     for event in pygame.event.get():
@@ -53,4 +53,4 @@ while run:
     crosshair_group.draw(screen)
     crosshair_group.update()
     clock.tick(60)
-    print(target_group)
+  
